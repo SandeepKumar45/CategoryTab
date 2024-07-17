@@ -1,0 +1,135 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 20px auto; 
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px; 
+  }
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .button-container a {
+    display: block;
+    color: black;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+  }
+
+  .button-container a:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button:target {
+    background: black;
+    color: white;
+  }
+  
+  .products {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center; 
+    padding: 20px; 
+  }
+  
+  .product {
+    background: white;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .product-image {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .product img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: large;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .vendor {
+    color: gray;
+  }
+    
+  .product-info {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 3px;
+    overflow: hidden;
+  }
+  .price {
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+  }
+  
+  .compare-at-price{
+      font-size: smaller;
+      text-decoration: line-through;
+      color: gray;
+  }
+  .discount{
+      font-weight: bold;
+      font-size: small;
+      color: red;
+  }
+  
+  .add-to-cart {
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background: darkgray;
+  }
+        
